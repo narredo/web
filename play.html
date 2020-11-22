@@ -1,0 +1,22 @@
+﻿<title>RADIO21</title>
+
+<script>
+function getParameterByName(name) {
+    name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+    results = regex.exec(location.search);
+    return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+}
+
+var gett = getParameterByName('q');
+function ybtv(gett){
+window.location="https://www.youtube.com/tv#/search?q="+gett;
+//window.location="https://www.youtube.com/embed?listType=search&playsinline=0&list="+gett;
+}
+
+var url = getParameterByName('q');
+document.write("<title>RADIO21</title><body bgcolor=olivedrab><center><audio controls src="+url+"></audio>");
+//window.location.href("data:text/html,'<audio controls src="+url+"></audio>'");
+
+
+</script>
