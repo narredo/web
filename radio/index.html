@@ -63,7 +63,7 @@ p{line-height:1.75}
 <SCRIPT language=javascript>
 function Url(id,url){
   var dir=url;
-  if(dir.includes("https")){
+  if(dir.includes("http")){
  var str = '<br><a href=?><h3>'+id+'</h3></a><audio id=clip src="'+url+'" controls autoplay=autoplay preload=none><a href='+url+'>Navegador incompatible. Abrir en otra ventana</a></audio><a href="http://facebook.com/sharer.php?u=http://top21.tk/radio.html" style=display:inline target=_blank>FB</a>::<a href="http://twitter.com/intent/tweet?status=Escuchando  '+id+' en http://top21.tk/radio.html&hashtag=Radio21" style=display:inline target=_blank>TW</a>';
 document.getElementById('player').innerHTML = str;
   }else{
